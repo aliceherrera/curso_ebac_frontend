@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #283F54;
+}
+
+.topo {
+    display: inline-flex;
+    margin-top: 52px;
+    margin-left: 83px;
+    max-width: 640px;
+    width: 100%;
+}
+
+h1, h3 {
+    color: #fff;
+}
+
+h1{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+.topo button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border-style: none;
+    background: #2EAA8C;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.container {
+    margin-top: 92px;
+    margin-left: 83px;
+    max-width: 640px;
+    width: 100%;
+}
+
+input, button, textarea {
+    display: block;
+    width: 311px;
+    max-width: 311px;
+    height: 35px;
+    margin-bottom: 8px;
+}
+
+::placeholder {
+    color: #2EAA8C;
+
+}
+
+#transferir-botao {
+    width: 145px;
+    height: 35px;
+    border-style: none;
+    background-color: #2EAA8C;;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.success-message {
+    background-color: #27ae60;
+    padding: 16px;
+    max-width: 311px;
+    color: #fff;
+    display: none;
+}
+
+.error-message {
+    font-size: 12px;
+    padding: 8px;
+    max-width: 311px;
+    background-color: red;
+    color: #fff;
+    margin-bottom: 8px;
+    display: none;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
