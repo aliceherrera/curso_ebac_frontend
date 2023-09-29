@@ -6,28 +6,26 @@ let formEValido = false;
 console.log(agencia);
 
 function compareNumbers(num1, num2) {
-    if (num2 > num1) {
-        return true;
-    }
-    else {
-        return false
-    }
+    let valida = num2>num1
+    return valida;
 }
 
 console.log(conta.type)
 console.log(agency.type)
-console.log (compareNumbers (3, 234)); 
+console.log (compareNumbers (agencia.value.length, conta.value.length)); 
 
 form.addEventListener('submit', function(e) {
     e.preventDefault(); //removendo recarregamento automarico da página
 
     const mensagemSucesso = `Transferencia no valor de: <b>${value.value} reais</b> feita para o CPF: <b>${cpf.value}</b>`;
 
-    formEValido = compareNumbers(agencia.valueAsNumber, conta.valueAsNumber)
+    formEValido = compareNumbers(agencia.value.length, conta.value.length)
     if (formEValido) {
         const containerMensagemSucesso = document.querySelector('.success-message')
         containerMensagemSucesso.innerHTML = mensagemSucesso;
         containerMensagemSucesso.style.display = 'block';
+        conta.style.border = '';
+        document.querySelector('.error-message').style.display = 'none';
 
         cpf.value = '';
         agency.value = '';
@@ -43,7 +41,7 @@ form.addEventListener('submit', function(e) {
 });
 
 conta.addEventListener('input', function (e) { 
-    formEValido = compareNumbers(agencia.valueAsNumber, conta.valueAsNumber)
+    formEValido = compareNumbers(agencia.value.length, conta.value.length)
 
     if (!formEValido) {
         conta.classList.add('error');
