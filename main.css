@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    background-image: url(images/Prancheta\ 1.png);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #FFE486;
+    font-family: Pacifico;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 32PX;
+}
+
+header,
+footer {
+    background: #162C46;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fundo {
+    background-color: #FFF;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-hamburguer{
+    width: 20px;
+    cursor: pointer;
+    margin-left: 16px;
+
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color:#FFE486;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.menu-direita {
+    display: flex;
+}
+
+.menu-direita h2 {
+    cursor: pointer;
+    color: #FFE486;
+    font-size: 16px;
+}
+
+.material-symbols-outlined {
+    color:#FFE486;
+    margin-left: 24px;
+    cursor: pointer;
+}
+
+#mensagem-inicio,
+#login,
+#anterior-proximo .container {
+    padding: 0 48px;
+}
+
+#mensagem-inicio p {
+    font-size: 24px;
+    margin-top: 160px;
+}
+
+#mensagem-inicio p span{
+    font-weight: bold;
+}
+
+#login p {
+    color: #ACACAC;
+    font-size: 16px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+#cadastro .container {
+    width: 1440px;
+    margin: auto;
+}
+
+.container form {
+    margin-top: 120px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #152C46;
+    margin-bottom: 32px;
+    margin-top: 40px;
+}
+
+.form-campo {
+    display:block;
+}
+
+.form-campo label{
+    display: block;
+    color: #152C46;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.form-campo input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    padding-left: 8px;
+}
+
+.form-campo button {
+    margin-top: 40px;
+}
+
+#anterior-proximo .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 160px;
+}
+
+footer {
+    height: 80px;
+}
+
+footer p {
+    color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    padding: 28px;
+}
+
+button {
+    padding: 16px 24px;
+    flex-shrink: 0;
+    background-color: #152C46;
+    color: #FFE486;
+    color: #FFE486;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.campoIncorreto {
+    color: #c05441;
+}
