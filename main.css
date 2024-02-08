@@ -1,0 +1,34 @@
+h1 {
+    margin-bottom: 32px;
+}
+h3 {
+    margin-bottom: 24px;
+}
+
+input {
+    margin-bottom: 16px;
+}
+
+.container {
+    height: 100%;
+}
+
+
+h2 {
+    position: absolute;
+    max-width: 60%;
+    width: 100%;
+    margin-top: 250px;
+    padding: 0 40px;
+    color: #ffffff;
+}
+
+div.imagem img {
+    max-height: 900px;
+    width: 100%;
+    object-fit: cover;
+}
+
+form button {
+    margin-bottom: 24px;
+}
