@@ -22,4 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         followingElement.innerHTML = json.following;
         linkElement.href = json.html_url;
     })
+    .catch(function(erro) {
+        alert('falha ao recuperar informações do usuário');
+    })
 })
